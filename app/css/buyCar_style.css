@@ -1,0 +1,643 @@
+.buy-page__content {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  background: #fff;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 7.5rem; }
+  @media (max-width: 992px) {
+    .buy-page__content {
+      padding-top: 4.5rem; } }
+  @media (max-width: 768px) {
+    .buy-page__content {
+      flex-direction: column; } }
+  .buy-page__content .buy-page__search-field {
+    position: absolute;
+    width: 80%;
+    display: flex;
+    padding-right: 18px;
+    right: 0; }
+    @media (max-width: 1530px) {
+      .buy-page__content .buy-page__search-field {
+        width: 78%; } }
+    @media (max-width: 992px) {
+      .buy-page__content .buy-page__search-field {
+        width: 76%; } }
+    @media (max-width: 768px) {
+      .buy-page__content .buy-page__search-field {
+        width: 100%;
+        padding: 0 15px;
+        justify-content: space-around; } }
+    .buy-page__content .buy-page__search-field i {
+      position: absolute;
+      z-index: 100;
+      color: #63b932;
+      font-size: 14pt;
+      left: 1em;
+      line-height: 40px; }
+      @media (max-width: 768px) {
+        .buy-page__content .buy-page__search-field i {
+          left: 30px;
+          font-size: 11pt;
+          line-height: 35px; } }
+    .buy-page__content .buy-page__search-field input {
+      width: 60%;
+      height: 40px;
+      border: 1px solid #63b932;
+      position: absolute;
+      padding-left: 4%; }
+      @media (max-width: 768px) {
+        .buy-page__content .buy-page__search-field input {
+          width: 95%;
+          padding-left: 2.5em;
+          height: 35px;
+          position: relative; } }
+    .buy-page__content .buy-page__search-field .search-field__view-filters {
+      font-family: Proxima Nova Rg;
+      font-size: 15px;
+      position: relative;
+      width: 38px;
+      height: 35px;
+      display: none;
+      text-align: center;
+      color: #63b932;
+      background-color: unset;
+      border: 0;
+      border-top: 1px solid #63b932;
+      border-right: 1px solid #63b932;
+      border-bottom: 1px solid #63b932;
+      cursor: pointer;
+      background: url(../img/buy/settings-icon.svg) no-repeat;
+      background-size: 55%;
+      background-position: center; }
+      @media (max-width: 768px) {
+        .buy-page__content .buy-page__search-field .search-field__view-filters {
+          display: block; } }
+  .buy-page__content .buy-page__car-filtres {
+    width: 20%;
+    min-height: 500px;
+    border-right: 1px solid #dbdbdb;
+    margin-top: 3em; }
+    @media (max-width: 1530px) {
+      .buy-page__content .buy-page__car-filtres {
+        width: 22%; } }
+    @media (max-width: 992px) {
+      .buy-page__content .buy-page__car-filtres {
+        width: 24%; } }
+    @media (max-width: 768px) {
+      .buy-page__content .buy-page__car-filtres {
+        width: 100%;
+        display: none; } }
+    .buy-page__content .buy-page__car-filtres .auto-card-filters__item {
+      padding: 0 12px; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__title {
+        font-size: 18px;
+        margin-bottom: 14px;
+        margin-left: 7px; }
+        @media (max-width: 1200px) {
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__title {
+            font-size: 16px; } }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type,
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        list-style: none; }
+        @media (max-width: 1200px) {
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type,
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type {
+            justify-content: space-between; } }
+        @media (max-width: 768px) {
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type,
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type {
+            justify-content: space-around; } }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type li,
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type li {
+          width: 33%;
+          margin-top: 6px;
+          margin-bottom: 13px;
+          position: relative;
+          cursor: pointer;
+          text-align: center;
+          display: list-item;
+          font-size: 12px; }
+          @media (max-width: 1200px) {
+            .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type li,
+            .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type li {
+              width: 43%; } }
+          @media (max-width: 768px) {
+            .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type li,
+            .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type li {
+              width: 26%; } }
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type li input[type='checkbox'],
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type li input[type='radio'],
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type li input[type='checkbox'],
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type li input[type='radio'] {
+            display: none; }
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type li input[type='checkbox'] + label,
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type li input[type='checkbox'] + label {
+            padding-top: 37px;
+            font-size: 12px;
+            line-height: 1.21;
+            display: block;
+            cursor: pointer; }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type input[type='checkbox'] + label::before,
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type input[type='checkbox'] + label::before {
+          width: 75px;
+          height: 25px;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          display: block;
+          content: '';
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+          @media (min-width: 1200px) and (max-width: 1349px) {
+            .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type input[type='checkbox'] + label::before,
+            .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type input[type='checkbox'] + label::before {
+              width: 60px; } }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan > input[type='checkbox'] + label::before,
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-sedan > input[type='checkbox'] + label::before {
+          background: url(../img/buy/body_type/sedan.svg) no-repeat;
+          background-size: 100% 100%; }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(2) > input[type='checkbox'] + label::before,
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-sedan:nth-child(2) > input[type='checkbox'] + label::before {
+          background: url(../img/buy/body_type/hatchback.svg);
+          background-size: 100% 100%; }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(3) > input[type='checkbox'] + label::before,
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-sedan:nth-child(3) > input[type='checkbox'] + label::before {
+          background: url(../img/buy/body_type/coupe.svg);
+          background-size: 100% 100%; }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(4) > input[type='checkbox'] + label::before,
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-sedan:nth-child(4) > input[type='checkbox'] + label::before {
+          background: url(../img/buy/body_type/SVG.svg);
+          background-size: 100% 100%; }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(5) > input[type='checkbox'] + label::before,
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-sedan:nth-child(5) > input[type='checkbox'] + label::before {
+          background: url(../img/buy/body_type/universal.svg);
+          background-size: 100% 100%; }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(6) > input[type='checkbox'] + label::before,
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-sedan:nth-child(6) > input[type='checkbox'] + label::before {
+          background: url(../img/buy/body_type/minivan.svg);
+          background-size: 100% 100%; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type li > label:hover,
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type input[type='checkbox']:checked + label {
+        color: green; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(1) > input[type='checkbox'] + label:hover::before,
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(1) > input[type='checkbox']:checked + label:before {
+        background: url(../img/buy/body_type/sedan_green.svg) no-repeat;
+        background-size: 100% 100%; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(2) > input[type='checkbox'] + label:hover::before,
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(2) > input[type='checkbox']:checked + label:before {
+        background: url(../img/buy/body_type/hatchback_green.svg) no-repeat;
+        background-size: 100% 100%; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(3) > input[type='checkbox'] + label:hover::before,
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(3) > input[type='checkbox']:checked + label:before {
+        background: url(../img/buy/body_type/coupe_green.svg) no-repeat;
+        background-size: 100% 100%; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(4) > input[type='checkbox'] + label:hover::before,
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(4) > input[type='checkbox']:checked + label:before {
+        background: url(../img/buy/body_type/SVG_green.svg) no-repeat;
+        background-size: 100% 100%; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(5) > input[type='checkbox'] + label:hover::before,
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(5) > input[type='checkbox']:checked + label:before {
+        background: url(../img/buy/body_type/universal_green.svg) no-repeat;
+        background-size: 100% 100%; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(6) > input[type='checkbox'] + label:hover::before,
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan:nth-child(6) > input[type='checkbox']:checked + label:before {
+        background: url(../img/buy/body_type/minivan_green.svg) no-repeat;
+        background-size: 100% 100%; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type input[type='checkbox'] + label::after {
+        font-family: FontAwesome;
+        font-size: 12px;
+        line-height: 1;
+        position: absolute;
+        display: none;
+        content: '\f00c';
+        color: #63b932;
+        top: -12px;
+        right: 4px;
+        z-index: 1;
+        padding: 6px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(99, 185, 50, 0.36); }
+        @media (max-width: 768px) {
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type input[type='checkbox'] + label::after {
+            right: unset; } }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-sedan > input[type='checkbox']:checked + label::after {
+        display: inline-block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-hatchback > input[type='checkbox']:checked + label::after {
+        display: inline-block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-coupe > input[type='checkbox']:checked + label::after {
+        display: inline-block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-minivan > input[type='checkbox']:checked + label::after {
+        display: inline-block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-krossover > input[type='checkbox']:checked + label::after {
+        display: inline-block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__body-type .item-universal > input[type='checkbox']:checked + label::after {
+        display: inline-block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type label {
+        cursor: pointer;
+        margin-bottom: 0; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .img-flag,
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .img-flag__gray {
+        display: none;
+        height: 40px;
+        margin-bottom: 5px;
+        cursor: pointer; }
+        @media (min-width: 1200px) and (max-width: 1349px) {
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .img-flag,
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .img-flag__gray {
+            height: 35px; } }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .img-flag img,
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .img-flag__gray img {
+          height: 100%; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .img-flag__gray {
+        display: block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type li > label:hover,
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type input[type='radio']:checked + label {
+        color: green; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type input[type='radio'] + label::after {
+        font-family: FontAwesome;
+        font-size: 12px;
+        line-height: 1;
+        position: absolute;
+        display: none;
+        content: '\f00c';
+        color: #63b932;
+        top: -12px;
+        right: -10px;
+        z-index: 1;
+        padding: 6px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(99, 185, 50, 0.36); }
+        @media (max-width: 768px) {
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type input[type='radio'] + label::after {
+            right: unset; } }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-ua > input[type='radio'] + label::after {
+        right: 0; }
+        @media (max-width: 768px) {
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-ua > input[type='radio'] + label::after {
+            right: unset; } }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-earth > input[type='radio']:checked + label::after {
+        display: inline-block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-usa > input[type='radio']:checked + label::after {
+        display: inline-block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-ua > input[type='radio']:checked + label::after {
+        display: inline-block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-earth > input[type='radio']:checked + label > .img-flag {
+        display: block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-earth > input[type='radio']:checked + label > .img-flag__gray {
+        display: none; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-usa > input[type='radio']:checked + label > .img-flag {
+        display: block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-usa > input[type='radio']:checked + label > .img-flag__gray {
+        display: none; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-ua > input[type='radio']:checked + label > .img-flag {
+        display: block; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type .item-ua > input[type='radio']:checked + label > .img-flag__gray {
+        display: none; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-filters__country-type li input[type='checkbox'] + label {
+        padding-top: 0; }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-select__marka {
+        position: relative;
+        margin-bottom: 22px;
+        background: #fff; }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-select__marka select {
+          width: 100%;
+          border-radius: 0;
+          height: 39px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          cursor: pointer;
+          padding: 0 10px;
+          box-shadow: 0 2px 7px 0 rgba(46, 46, 46, 0.36); }
+          .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-select__marka select:hover {
+            border: 1px solid #63b932; }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-select__marka::before {
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: 18px;
+          display: inline-block;
+          content: '\f107';
+          color: #2e2e2e;
+          position: absolute;
+          right: 6px;
+          top: 10px;
+          cursor: pointer; }
+        .buy-page__content .buy-page__car-filtres .auto-card-filters__item .auto-card-select__marka:hover::before {
+          color: #63b932; }
+    .buy-page__content .buy-page__car-filtres .auto-card-filters__item > .form-control {
+      margin-bottom: 5px;
+      box-shadow: 0 2px 5px 0 rgba(46, 46, 46, 0.36); }
+      .buy-page__content .buy-page__car-filtres .auto-card-filters__item > .form-control:hover {
+        border: 1px solid #63b932; }
+    .buy-page__content .buy-page__car-filtres .auto-card-filters__item > input:last-child {
+      margin-bottom: 20px; }
+    .buy-page__content .buy-page__car-filtres .flex-currency {
+      display: flex; }
+      .buy-page__content .buy-page__car-filtres .flex-currency .auto-card-select__prize {
+        width: 100%;
+        display: flex;
+        margin-top: 2px;
+        margin-left: 14px;
+        text-decoration: none;
+        color: #b3b3b3; }
+        .buy-page__content .buy-page__car-filtres .flex-currency .auto-card-select__prize a {
+          font-family: Proxima Nova Bd;
+          font-size: 11pt;
+          margin-right: 10px;
+          text-decoration: none;
+          cursor: pointer;
+          text-transform: uppercase; }
+          .buy-page__content .buy-page__car-filtres .flex-currency .auto-card-select__prize a:hover {
+            color: #63b932; }
+          .buy-page__content .buy-page__car-filtres .flex-currency .auto-card-select__prize a:first-child {
+            color: #63b932; }
+        .buy-page__content .buy-page__car-filtres .flex-currency .auto-card-select__prize .current-active {
+          color: #63b932 !important; }
+  .buy-page__content .buy-page__car-list {
+    width: 80%;
+    background: #f5f5f5;
+    border-top: 1px solid #dbdbdb;
+    margin-top: 3em; }
+    @media (max-width: 1530px) {
+      .buy-page__content .buy-page__car-list {
+        width: 78%; } }
+    @media (max-width: 992px) {
+      .buy-page__content .buy-page__car-list {
+        width: 76%; } }
+    @media (max-width: 768px) {
+      .buy-page__content .buy-page__car-list {
+        width: 100%; } }
+    .buy-page__content .buy-page__car-list ul {
+      margin-bottom: 0; }
+    .buy-page__content .buy-page__car-list .buy-page__auto-card-list {
+      max-width: 100%;
+      margin-top: 0;
+      padding-top: 14px;
+      padding-bottom: 7.5px;
+      padding-left: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      align-content: baseline; }
+      @media (max-width: 768px) {
+        .buy-page__content .buy-page__car-list .buy-page__auto-card-list {
+          padding-top: 0;
+          padding-left: 0; } }
+      .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item {
+        width: 285px;
+        height: 360px;
+        display: inline-block;
+        margin-right: 14px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 2, 0.1);
+        position: relative;
+        cursor: pointer;
+        background-color: #fff; }
+        @media (max-width: 768px) {
+          .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item {
+            margin-right: 0;
+            height: unset; } }
+        .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item:hover {
+          box-shadow: 0 0 40px rgba(0, 0, 2, 0.4); }
+          @media (max-width: 768px) {
+            .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item:hover {
+              box-shadow: 0 0 20px rgba(0, 0, 2, 0.1); } }
+        @media (max-width: 1530px) {
+          .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item {
+            width: 31%; } }
+        @media (max-width: 1092px) {
+          .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item {
+            width: 47%; } }
+        @media (max-width: 768px) {
+          .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item {
+            width: 100%; } }
+        .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__img {
+          height: 200px;
+          position: relative;
+          overflow: hidden;
+          width: 100%; }
+          @media (max-width: 768px) {
+            .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__img {
+              height: auto; } }
+          .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__img img {
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            transition: .1s; }
+        .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          min-height: 167px;
+          background: #fff; }
+          @media (max-width: 768px) {
+            .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content {
+              min-height: 100px;
+              position: relative; } }
+          .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap {
+            width: 100%;
+            height: 125px;
+            overflow: hidden;
+            transition: .2s linear; }
+            @media (max-width: 768px) {
+              .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap {
+                height: 100px; } }
+            .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__title {
+              font-size: 16px;
+              overflow: hidden;
+              margin: 0 20px;
+              padding: 10px 0 9px;
+              border-bottom: 1px solid #dbdbdb;
+              min-height: 45px; }
+              @media (max-width: 768px) {
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__title {
+                  display: flex;
+                  justify-content: space-between; } }
+              .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__title .auto-card__year {
+                color: #999;
+                font-size: 16px;
+                line-height: 1.06; }
+              .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__title .auto-card__name {
+                font-size: 16px;
+                line-height: 1.06; }
+            .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info {
+              margin-top: 15px;
+              padding: 0 15px;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              max-height: 70px; }
+              @media (max-width: 768px) {
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info {
+                  justify-content: space-between;
+                  flex-wrap: nowrap; } }
+              .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                width: 46%;
+                margin-right: 10px;
+                margin-bottom: 8px;
+                height: 24px; }
+                @media (max-width: 1200px) {
+                  .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li {
+                    width: 43%;
+                    margin-right: 15px; } }
+                @media (max-width: 768px) {
+                  .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    width: unset;
+                    margin-right: 0; } }
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li img {
+                  max-width: 24px;
+                  margin-right: 7px;
+                  margin-left: 5px;
+                  height: 17px; }
+                  @media (max-width: 768px) {
+                    .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li img {
+                      display: none; } }
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li p,
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li .auto-prize {
+                  font-family: Proxima Nova Bd;
+                  font-size: 14px;
+                  line-height: 1.14;
+                  position: relative;
+                  margin-bottom: 0;
+                  color: #999; }
+                  @media (min-width: 768px) and (max-width: 1200px) {
+                    .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li p,
+                    .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li .auto-prize {
+                      font-size: 12px; } }
+                  @media (max-width: 768px) {
+                    .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li p,
+                    .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li .auto-prize {
+                      font-weight: 700; } }
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li .list-info__mobile-item {
+                  font-family: Proxima Nova Bd;
+                  display: none;
+                  line-height: 1.14;
+                  font-size: 12px;
+                  font-weight: 100; }
+                  @media (max-width: 768px) {
+                    .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__list-info li .list-info__mobile-item {
+                      display: block; } }
+            .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-prize {
+              display: none;
+              margin-bottom: 0; }
+              @media (max-width: 768px) {
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-prize {
+                  display: block;
+                  color: #e56266; } }
+            .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__fade {
+              margin: 0 20px;
+              padding: 10px 0 9px;
+              min-height: 70px;
+              overflow: hidden;
+              border-top: 1px solid #dbdbdb; }
+              @media (max-width: 768px) {
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__fade {
+                  display: none; } }
+              .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__fade .auto-card__list-fade {
+                padding: 0;
+                list-style: none; }
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__fade .auto-card__list-fade li {
+                  font-size: 13px;
+                  position: relative;
+                  display: inline-block;
+                  color: #949494;
+                  margin-right: 7px; }
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__fade .auto-card__list-fade li::before {
+                  font-size: 17px;
+                  position: absolute;
+                  top: 50%;
+                  right: -8px;
+                  display: block;
+                  content: "\2022";
+                  transform: translateY(-50%);
+                  color: inherit; }
+                .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__content-wrap .auto-card__fade .auto-card__list-fade li:last-child::before {
+                  content: ''; }
+          .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__bottom-prize {
+            width: 100%;
+            max-height: 46px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between; }
+            @media (max-width: 768px) {
+              .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__bottom-prize {
+                display: none; } }
+            .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__bottom-prize p {
+              font-size: 17px;
+              line-height: 1;
+              padding-top: 11px;
+              padding-bottom: 12px;
+              text-align: center;
+              border-top: 1px solid #dbdbdb;
+              width: 50%;
+              margin-bottom: 0; }
+            .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item .auto-card__content .auto-card__bottom-prize a {
+              font-size: 11px;
+              font-weight: 700;
+              line-height: 1.11;
+              padding: 14px 10px;
+              text-transform: uppercase;
+              color: #fff;
+              background-color: #F24B09;
+              width: 50%;
+              padding: 15px 5px;
+              text-align: center;
+              text-decoration: none; }
+      @media (min-width: 769px) {
+        .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item:hover .auto-card__content-wrap {
+          height: 195px;
+          transition: .2s linear; }
+        .buy-page__content .buy-page__car-list .buy-page__auto-card-list .buy-page__auto-card-item:hover img {
+          transform: scale(1.05); } }
+    .buy-page__content .buy-page__car-list .pagination {
+      width: 100%;
+      display: flex;
+      height: 50px;
+      margin: 20px auto;
+      justify-content: center;
+      align-items: center; }
+      .buy-page__content .buy-page__car-list .pagination a {
+        color: #a7a6a6;
+        text-decoration: none;
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+        font-size: 15pt;
+        padding: 7px 17px; }
+        @media (max-width: 768px) {
+          .buy-page__content .buy-page__car-list .pagination a {
+            height: 35px;
+            width: 35px;
+            font-size: 12pt;
+            padding: 5px 13px; } }
+        .buy-page__content .buy-page__car-list .pagination a:hover:first-child, .buy-page__content .buy-page__car-list .pagination a:hover:last-child {
+          color: #F24B09; }
+        .buy-page__content .buy-page__car-list .pagination a:hover:not(.active) {
+          color: black; }
+      .buy-page__content .buy-page__car-list .pagination .active {
+        background-color: #F24B09;
+        color: white; }
+
+/*# sourceMappingURL=buyCar_style.css.map */

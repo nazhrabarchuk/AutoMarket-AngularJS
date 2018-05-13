@@ -1,0 +1,5 @@
+<div class="pagination">
+  <a href="#" ng-click="changePage(page - 1, $event)">&laquo;</a>
+  <a href="#" ng-class="page == p ? 'active' : ''" ng-repeat="p in pages" ng-click="changePage(p, $event)">{{p}}</a>
+  <a href="#"  ng-click="changePage(page + 1, $event)">&raquo;</a>
+</div>

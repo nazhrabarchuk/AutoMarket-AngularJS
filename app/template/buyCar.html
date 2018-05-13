@@ -1,0 +1,183 @@
+<div class="buy-page__content" ng-controller='buyCtrl as buy'>
+    <div class="buy-page__search-field">
+
+        <i class="fas fa-search"></i>
+        <input type="text" ng-model='buy.search'>
+        <button class="search-field__view-filters"></button>
+    </div>
+    <aside class="buy-page__car-filtres">
+        <div class="auto-card-filters__item">
+            <h3 class="auto-card-filters__title">Тип кузова</h3>
+            <ul class="auto-card-filters__body-type">
+<!-- without ng-repeat
+                <li class="item-sedan">
+                    <input type="checkbox" id="sedan" ng-change='buy.sedan(getSedan)' ng-model="buy.filter[body]">
+                    <label for="sedan">Седан</label>
+                </li>
+                <li class="item-hatchback">
+                    <input type="checkbox" id="hatchback" ng-change='buy.hatchback(getHatchback)' ng-model='getHatchback'>
+                    <label for="hatchback">Хетчбек</label>
+                </li>
+                <li class="item-coupe">
+                    <input type="checkbox" id="coupe" ng-change='buy.coupe(getCoupe)' ng-model='getCoupe'>
+                    <label for="coupe">Купе</label>
+                </li>
+                <li class="item-minivan">
+                    <input type="checkbox" id="minivan" ng-change='buy.minivan(getMinivan)' ng-model='getMinivan'>
+                    <label for="minivan">Мінівен</label>
+                </li>
+                <li class="item-krossover">
+                    <input type="checkbox" id="krossover" ng-change='buy.krossover(getKrossover)' ng-model='getKrossover'>
+                    <label for="krossover">Позашляховик</label>
+                </li>
+                <li class="item-universal">
+                    <input type="checkbox" id="universal" ng-change='buy.universal(getUniversal)' ng-model='getUniversal'>
+                    <label for="universal">Універсал</label>
+                </li>
+-->
+           <li ng-repeat='category in buy.getCategories()' class="item-sedan">
+               <input type="checkbox" ng-model='buy.filter[category]' id='{{category}}'>
+                <label for="{{category}}" class="body-type">{{category}}
+                </label>
+           </li>
+            </ul>
+        </div>
+        <div class="auto-card-filters__item" id="country_cars">
+            <h3 class="auto-card-filters__title">Місцезнаходження авто</h3>
+            <ul class="auto-card-filters__country-type">
+                <li class="item-earth choose-country ">
+                    <input type="radio" id="earth" name='1' checked>
+                    <label for="earth">
+                    <div class="img-flag">
+                        <img src="../img/buy/earth_logo.png" alt="">
+                    </div>
+                       <div class="img-flag__gray">
+                        <img src="../img/buy/earth_logo_grey.png" alt="">
+                    </div>
+                    Всі країни</label>
+                </li>
+                <li class="item-ua choose-country">
+                    <input type="radio" id="ua" name='1'>
+                    <label for="ua">
+                    <div class="img-flag">
+                        <img src="../img/buy/ukr_logo.png" alt="">
+                    </div>
+                       <div class="img-flag__gray">
+                        <img src="../img/buy/ukr_logo_grey.png" alt="">
+                    </div>
+                    Україна</label>
+                </li>
+                <li class="item-usa choose-country">
+                    <input type="radio" id="usa" name='1'>
+                    <label for="usa">
+                    <div class="img-flag">
+                        <img src="../img/buy/usa_logo.png" alt="">
+                    </div>
+                       <div class="img-flag__gray">
+                        <img src="../img/buy/usa_logo_grey.png" alt="">
+                    </div>
+                    США</label>
+                </li>
+
+            </ul>
+        </div>
+        <div class="auto-card-filters__item">
+            <h3 class="auto-card-filters__title">Марка</h3>
+            <div class="auto-card-select__marka">
+                <select name="marka" id="marka" class="form-control" ng-options="category as category for category in buy.carName "  ng-model="carSelect" ng-selected = buy.selectName(carSelect) required>
+                    <option value="">Всі марки</option>
+                </select>
+            </div>
+        </div>
+        <div class="auto-card-filters__item flex-currency">
+            <h3 class="auto-card-filters__title">Ціна</h3>
+            <div class="auto-card-select__prize">
+           <a class='current-prize' ng-repeat='currency in buy.currency' ng-click='buy.name($index)'>{{currency.name}}</a>
+            </div>
+        </div>
+        <div class="auto-card-filters__item">
+            <input type="text" class="form-control" ng-model="buy.min" placeholder="min price">
+            <input type="text" class="form-control" ng-model="buy.max" placeholder="max price">
+        </div>
+        <div class="auto-card-filters__item">
+            <h3 class="auto-card-filters__title">Коробка передач</h3>
+            <div class="auto-card-select__marka">
+                <select name="gearbox" id="gearbox" class="form-control" ng-options="category as category for category in buy.carGearbox" ng-model="carGearbox" ng-selected = buy.selectGearbox(carGearbox) required>
+                    <option value="">Всі</option> 
+                </select>
+            </div>
+        </div>
+        <div class="auto-card-filters__item">
+            <h3 class="auto-card-filters__title">Тип приводу</h3>
+            <div class="auto-card-select__marka">
+                <select name="drive" id="drive" class="form-control" ng-options="category as category for category in buy.carDrive" ng-model="carDrive" ng-selected = buy.selectDrive(carDrive) required>
+                    <option value="">Всі</option>
+                    
+                </select>
+            </div>
+        </div>
+    </aside>
+    <aside class="buy-page__car-list">
+        <ul class="buy-page__auto-card-list">
+            <li class="buy-page__auto-card-item" ng-repeat='carSelect in buy.carTypes | filter:buy.filterByCategory | searchItem:buy.search | minMaxPrice:buy.min:buy.max | filter:filterType | carName:buy.filterName | filter:buy.filterGearbox | filter:buy.filterDrive | limitTo:buy.size:(buy.page-1) * buy.size'>
+                <div class="auto-card__img">
+                    <img ng-src="{{carSelect.img}}" alt="">
+                </div>
+                <div class="auto-card__content">
+                    <div class="auto-card__content-wrap">
+
+                        <div class="auto-card__title">
+                            <div class="car__year-name">
+                                <span class="auto-card__year">{{carSelect.year}}</span>
+                                <span class="auto-card__name">{{carSelect.name}} {{carSelect.marka}}</span>
+                            </div>
+                            <p class="auto-prize">
+                                {{carSelect.price[buy.current].name | currency:buy.znak:0}}
+                            </p>
+                        </div>
+                        <ul class="auto-card__list-info">
+                            <li>
+                                <img src="../img/buy/speed.png" alt="">
+                                <p class="list-info__mobile-item">Пробіг</p>
+                                <p>{{carSelect.run}}km</p>
+                            </li>
+                            <li>
+                                <img src="../img/buy/petrol.svg" alt="">
+                                <p class="list-info__mobile-item">Паливо</p>
+                                <p>{{carSelect.petrol}}</p>
+                            </li>
+                            <li>
+                                <img src="../img/buy/gearbox.png" alt="">
+                                <p class="list-info__mobile-item">Тип КПП</p>
+                                <p>{{carSelect.gearbox}}</p>
+                            </li>
+                            <li>
+                                <img src="../img/buy/transmission.png" alt="">
+                                <p class="list-info__mobile-item">Об'єм</p>
+                                <p>{{carSelect.volume}}л</p>
+                            </li>
+
+                        </ul>
+                        <div class="auto-card__fade">
+                            <ul class="auto-card__list-fade">
+                                <li>{{carSelect.drive}} привід</li>
+                                <li>{{carSelect.body}}</li>
+                                <li>{{carSelect.color}}</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="auto-card__bottom-prize">
+                        <p class="auto-prize">
+                                {{carSelect.price[buy.current].name | currency:buy.znak:0}}
+                        </p>
+                        <a>Дізнатись більше</a>
+                    </div>
+                </div>
+            </li>
+           
+        </ul>
+         <lgs-pagination ng-model="buy.page" size="buy.size" total-pages="buy.pageCount"></lgs-pagination>
+    </aside>
+</div>

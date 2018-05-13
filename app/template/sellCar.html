@@ -1,0 +1,170 @@
+<div class="sell-car__container" ng-controller='sellCtrl as sell'>
+    <header class="sell-car__header">
+        <h1 class="sell-car__title">Продати</h1>
+    </header>
+    <div class="sell-car__content">
+        <div class="sell-car__content-block">
+            <aside class="content-block__info">
+                <h1 class="aside-info__title">Якими способами ви можете продати своє авто?</h1>
+                <div class="aside-info__step-1">
+                    <div class="aside-info__step-head">
+                        <span>1</span>
+                        <p>Миттєвий викуп</p>
+                    </div>
+                    <div class="aside-info__step-item-block">
+                        <div class="aside-info__step-item">
+                            <p class="step-item__text">Приїжджайте в будь-який зручний час на огляд авто</p>
+                            <p class="step-item__number">Крок 1</p>
+                        </div>
+                        <div class="aside-info__step-item">
+                            <p class="step-item__text">Викуповуємо авто та беремо на себе оформлення усіх документів</p>
+                            <p class="step-item__number">Крок 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-info__line"></div>
+                <div class="aside-info__step-2">
+                    <div class="aside-info__step-head">
+                        <span>2</span>
+                        <p>Автоаукціон</p>
+                    </div>
+                    <div class="aside-info__step-item-block">
+                        <div class="aside-info__step-item">
+                            <p class="step-item__text">Приїжджаєте до нас, робимо оперативний огляд, фото-, відео- зйомку вашого автомобіля</p>
+                            <p class="step-item__number">Крок 1</p>
+                        </div>
+                        <div class="aside-info__step-item">
+                            <p class="step-item__text">
+                                Виставляємо вашу машину на терміновий аукціон серед більше 1000 автодилерів</p>
+                            <p class="step-item__number">Крок 2</p>
+                        </div>
+                        <div class="aside-info__step-item">
+                            <p class="step-item__text">
+                                Вибираємо найкращу ціну, беремо на себе оформлення всіх документів і ви їдете з грошима</p>
+                            <p class="step-item__number">Крок 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-info__line"></div>
+                <div class="aside-info__step-3">
+                    <div class="aside-info__step-head">
+                        <span>3</span>
+                        <p>Продаж через мережу <br> автосалонів "Auto market"</p>
+                    </div>
+                    <div class="aside-info__step-item-block">
+                        <div class="aside-info__step-item">
+                            <p class="step-item__text">
+                                Робимо оперативний огляд, фото-, відео- зйомку вашого автомобіля і погоджуємо вартість</p>
+                            <p class="step-item__number">Крок 1</p>
+                        </div>
+                        <div class="aside-info__step-item">
+                            <p class="step-item__text">Продаємо ваше авто, використовуючи всі канали просування і клієнтську базу по всій Україні</p>
+                            <p class="step-item__number">Крок 2</p>
+                        </div>
+                        <div class="aside-info__step-item">
+                            <p class="step-item__text">Запрошуємо вас для укладення угоди і отримання грошей</p>
+                            <p class="step-item__number">Крок 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-info__block-with-clock">
+                    <div class="block-with-clock__img">
+                        <img src="../img/sell/clock.png" alt="">
+                    </div>
+                    <p>
+                        Проведення огляду та фото-, відео- зйомки вашого автомобіля займе не більше 30 хвилин</p>
+                </div>
+                <h1 class="aside-info__advantages-title">Наші переваги</h1>
+                <ul class="aside-info__advantages-list">
+                    <li>
+                        <img src="../img/sell/guarantee.png" alt="">
+                        <p>Безпечна <br> угода</p>
+                    </li>
+                    <li>
+                        <img src="../img/sell/forma-2.png" alt="">
+                        <p>Особистий <br> менеджер</p>
+                    </li>
+                    <li>
+                        <img src="../img/sell/forma-1.png" alt="">
+                        <p>Передпродажна <br> підготовка</p>
+                    </li>
+                    <li>
+                        <span>9</span>
+                        <p>9 років <br> на ринку</p>
+                    </li>
+                    <li>
+                        <img src="../img/sell/forma-4.png" alt="">
+                        <p>Більше 10 000 <br> клієнтів</p>
+                    </li>
+                    <li>
+                        <img src="../img/sell/forma-3.png" alt="">
+                        <p>40.000 автомобілів <br> продано</p>
+                    </li>
+                </ul>
+            </aside>
+            <aside class="content-block__form">
+                <div class="aside-form__inner">
+                    <h3 class="aside-form__title">Введіть дані про авто, яке ви <b>хочете продати</b></h3>
+                    <form action="#" class="aside-form__form" name="myForm">
+                        <label for="sell-marka">Марка<sup>*</sup>
+                        <select name="" id="sell-marka" class="form-control" ng-options="category as category for category in sell.carName "  ng-model="carSelect" ng-selected = sell.selectModel(carSelect) required >
+                            
+                        </select>
+                        </label>
+                        <label for="sell-model">Модель<sup>*</sup>
+                        <select name="" id="sell-marka" class="form-control" ng-options='category as category for category in sell.carModel' ng-model='sell.currentItem.marka' required>
+                        </select>
+                        </label>
+                        <div class="sell-form__year-km">
+                            <label for="sell-year">Рік випуску<sup>*</sup>
+                            <select name="" id="sell-year" class='form-control' ng-options="category as category for category in sell.carYear"  ng-model="sell.currentItem.year"  required>
+                                
+                            </select>
+                            </label>
+                            <label for="sell-km"> Пробіг <span> (км)</span>
+                            <input type="text" class='form-control' id="sell-km" id="sell-prize" allow-numbers-only pattern="^[0-9]{1,}" ng-model="sell.currentItem.run" required>
+                            </label>
+                        </div>
+                        <div class="sell-form__year-km">
+                            <label for="petrol_name"> Тип палива
+                                <select name="" id="petrol_name" class='form-control' ng-options="category as category for category in sell.petrolType"  ng-model="sell.currentItem.petrol"  required> </select>
+                            </label>
+                            <label for="drive_name"> Тип приводу
+                                <select name="" id="drive_name" class='form-control' ng-options="category as category for category in sell.driveType"  ng-model="sell.currentItem.drive"  required> </select>
+                            </label>
+                        </div>
+                        <div class="sell-form__year-km">
+                        <label for="gearbox_name"> Тип передач
+                                <select name="" id="gearbox_name" class='form-control' ng-options="category as category for category in sell.gearboxType"  ng-model="sell.currentItem.gearbox"  required> </select>
+                            </label>
+                               <label for="body_name"> Тип кузова
+                                <select name="" id="body_name" class='form-control' ng-options="category as category for category in sell.bodyType"  ng-model="sell.currentItem.body"  required> </select>
+                            </label>
+                           </div> 
+                        <div class="sell-form__year-km">
+                            <label for="color_name"> Колір авто
+                            <input type="text" class='form-control' id="color_name"  ng-model="sell.currentItem.color">
+                            </label>
+                            <label for="volume_name"> Об'єм
+                            <input type="text" class='form-control' id="volume_name"  ng-model="sell.currentItem.volume">
+                            </label>
+                        </div>
+                        <label for="sell-prize"> Ціна <span>($)</span>
+                            <input type="text" class='form-control' id="sell-prize" allow-numbers-only pattern="^[0-9]{3,}"  ng-model="sell.price[0].name" required>
+                            </label>
+                            <label for="">Фото:<input type="file" id='userUpload' ng-model='filename' valid-file name='filename' fileread='sell.currentItem.img'  required></label>
+                            
+                       
+                        <!--           submit                 <input type="submit" value="Sign Up" ng-class=" registerForm.$invalid == true ? 'disabledSignUp' : 'submitSignUp' " ng-click='main.clickRegister()' ng-disabled='registerForm.$invalid'>-->
+                    </form>
+                        <input type="submit" ng-class='myForm.$invalid == false ? "btn btn-correct" : "btn btn-disabled"' value="Відправити заявку" ng-click="sell.save()" ng-disabled="myForm.$invalid">
+                        <p class="sell-form__call-manadger">З вами зв'яжеться наш менеджер</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+
+
+
+</div>

@@ -1,0 +1,451 @@
+.sell-car__container .sell-car__header {
+  background-image: url(../img/sell/img-sell-header.jpg);
+  min-height: 600px;
+  padding-top: 30px;
+  background-size: cover;
+  position: relative;
+  background-position-x: 50%; }
+  @media (max-width: 768px) {
+    .sell-car__container .sell-car__header {
+      min-height: 300px;
+      background-position-x: 30%; } }
+  .sell-car__container .sell-car__header .sell-car__title {
+    font-size: 34px;
+    line-height: 1.12;
+    position: absolute;
+    bottom: 2em;
+    left: 15%;
+    color: #fff; }
+    @media (max-width: 768px) {
+      .sell-car__container .sell-car__header .sell-car__title {
+        font-size: 22px;
+        bottom: 1em; } }
+    .sell-car__container .sell-car__header .sell-car__title::before {
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      bottom: -20pt;
+      background-color: #fff;
+      content: '';
+      left: 2px; }
+      @media (max-width: 768px) {
+        .sell-car__container .sell-car__header .sell-car__title::before {
+          width: 40px;
+          top: 28pt;
+          bottom: unset; } }
+.sell-car__container .sell-car__content {
+  width: 100%;
+  min-height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  position: relative; }
+  .sell-car__container .sell-car__content .sell-car__content-block {
+    max-width: 1030px;
+    min-height: 600px;
+    position: relative;
+    border: 1px solid white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 1200px) {
+      .sell-car__container .sell-car__content .sell-car__content-block {
+        max-width: 930px; } }
+    @media (max-width: 950px) {
+      .sell-car__container .sell-car__content .sell-car__content-block {
+        max-width: 890px; } }
+    @media (max-width: 768px) {
+      .sell-car__container .sell-car__content .sell-car__content-block {
+        flex-direction: column-reverse; } }
+    .sell-car__container .sell-car__content .sell-car__content-block .content-block__info {
+      width: 63%;
+      margin-left: 15px; }
+      @media (max-width: 768px) {
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info {
+          width: 100%;
+          margin-left: 0; } }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__title {
+        margin: 42px 0 37px;
+        font-size: 24px;
+        text-align: center; }
+        @media (max-width: 950px) {
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__title {
+            font-size: 20px;
+            padding: 0 10px; } }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1,
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2,
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 {
+        display: flex;
+        width: 100%;
+        min-height: 190px; }
+        @media (max-width: 768px) {
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1,
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2,
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 {
+            display: block;
+            padding: 0 20px; } }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-head,
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-head,
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head {
+          width: 34%;
+          display: block;
+          background: url(../img/sell/steps-logo_1.jpg) no-repeat bottom right;
+          background-size: 110px;
+          font-family: Proxima Nova Bd;
+          font-size: 21px;
+          font-weight: bold;
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.16), 0 0 15px rgba(0, 0, 0, 0.16); }
+          @media (max-width: 768px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-head,
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-head,
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head {
+              width: 100%;
+              height: 60px;
+              background-size: 75px; } }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-head span,
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-head span,
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head span {
+            display: inline-block;
+            padding: 0 8px 6px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            margin-left: 20px;
+            border-bottom: 3px solid #F24B09; }
+            @media (max-width: 768px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-head span,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-head span,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head span {
+                padding: 0px 5px 0px;
+                font-size: 25px;
+                display: unset;
+                margin: 0 10px 0 15px;
+                border-bottom: 3px solid #F24B09; } }
+            @media (max-width: 480px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-head span,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-head span,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head span {
+                margin: 0 5px 0 8px; } }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-head p,
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-head p,
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head p {
+            padding: 5px 60px 0 20px;
+            line-height: 1.12; }
+            @media (max-width: 950px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-head p,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-head p,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head p {
+                font-size: 12pt; } }
+            @media (max-width: 768px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-head p,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-head p,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head p {
+                display: inline-block;
+                margin-bottom: 0;
+                margin-top: 7px;
+                line-height: 45px;
+                padding: 0px 10px 0px 11px;
+                border-left: 1px solid gray; } }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-item-block,
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block,
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block {
+          width: 66%;
+          display: flex; }
+          @media (max-width: 768px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-item-block,
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block,
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block {
+              width: 100%;
+              flex-direction: column;
+              align-items: center; } }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-item-block .aside-info__step-item,
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block .aside-info__step-item,
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block .aside-info__step-item {
+            width: 50%;
+            min-height: 150px;
+            padding: 15px 8px 0px 13px;
+            display: flex;
+            flex-direction: column;
+            flex-direction: column;
+            border: 1px solid #d5d5d5;
+            border-left: none;
+            margin: auto 0; }
+            @media (max-width: 768px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-item-block .aside-info__step-item,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block .aside-info__step-item,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block .aside-info__step-item {
+                width: 90%;
+                min-height: 90px;
+                padding: 20px 8px 0px 13px;
+                border-left: 1px solid #d5d5d5;
+                border-bottom: none; } }
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-item-block .aside-info__step-item .step-item__text,
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block .aside-info__step-item .step-item__text,
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block .aside-info__step-item .step-item__text {
+              margin-bottom: auto;
+              font-size: 14px;
+              line-height: 1.29; }
+              @media (max-width: 950px) {
+                .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-item-block .aside-info__step-item .step-item__text,
+                .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block .aside-info__step-item .step-item__text,
+                .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block .aside-info__step-item .step-item__text {
+                  font-size: 12px; } }
+              @media (max-width: 768px) {
+                .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-item-block .aside-info__step-item .step-item__text,
+                .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block .aside-info__step-item .step-item__text,
+                .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block .aside-info__step-item .step-item__text {
+                  font-size: 13px;
+                  padding-bottom: 10px; } }
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 .aside-info__step-item-block .aside-info__step-item .step-item__number,
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block .aside-info__step-item .step-item__number,
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block .aside-info__step-item .step-item__number {
+              font-weight: 700;
+              font-size: 13px;
+              line-height: 1.38;
+              color: #d5d5d5;
+              margin-bottom: 10px; }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-1 > .aside-info__step-item-block > .aside-info__step-item:nth-child(2) {
+        border-bottom: 1px solid #d5d5d5; }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2,
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 {
+        min-height: 315px; }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-head,
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head {
+          background: url(../img/sell/steps-logo_2.jpg) no-repeat bottom right;
+          background-size: 172px; }
+          @media (max-width: 768px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-head,
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head {
+              background-size: 73px; } }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block,
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block {
+          flex-wrap: wrap;
+          align-content: center; }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block .aside-info__step-item:last-child,
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block .aside-info__step-item:last-child {
+            width: 100%;
+            border-top: none;
+            min-height: 120px; }
+            @media (max-width: 768px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-2 .aside-info__step-item-block .aside-info__step-item:last-child,
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block .aside-info__step-item:last-child {
+                width: 90%;
+                min-height: 90px;
+                border-top: 1px solid #d5d5d5;
+                border-bottom: 1px solid #d5d5d5; } }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head {
+        background: url(../img/sell/steps-logo_3.jpg) no-repeat bottom right;
+        background-size: 115px; }
+        @media (max-width: 768px) {
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head {
+            background-size: 60px; } }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head p {
+          padding: 5px 5px 0 9px; }
+          @media (max-width: 950px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head p {
+              font-size: 12pt;
+              padding: 5px 5px 0 15px; } }
+          @media (max-width: 768px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head p {
+              padding: 10px 15px 11px;
+              line-height: 15px;
+              padding-top: 5px; } }
+          @media (max-width: 480px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-head p {
+              font-size: 10pt; } }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block > .aside-info__step-item:last-child {
+        min-height: 100px; }
+        @media (max-width: 768px) {
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__step-3 .aside-info__step-item-block > .aside-info__step-item:last-child {
+            min-height: 90px; } }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__line {
+        margin: 37px 0 35px;
+        border-top: 1px solid #d5d5d5; }
+        @media (max-width: 768px) {
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__line {
+            margin: 30px 20px; } }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__line::before {
+          content: '';
+          display: block;
+          margin-top: -2px;
+          background-color: #F24B09;
+          -webkit-box-shadow: 0px 3px 12px 0px rgba(242, 75, 9, 0.7);
+          box-shadow: 0px 3px 12px 0px rgba(242, 75, 9, 0.7);
+          width: 220px;
+          height: 3px; }
+          @media (max-width: 768px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__line::before {
+              margin-left: auto;
+              margin-right: auto;
+              width: 100px; } }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__block-with-clock {
+        margin: 40px 20px;
+        display: flex;
+        box-shadow: 0 5px 50px rgba(0, 0, 2, 0.1); }
+        @media (max-width: 480px) {
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__block-with-clock {
+            display: none; } }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__block-with-clock .block-with-clock__img {
+          width: 170px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-right: 1px solid #d5d5d5; }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__block-with-clock .block-with-clock__img img {
+            width: 48px;
+            height: 48px; }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__block-with-clock p {
+          padding: 25px 35px;
+          font-size: 20px;
+          line-height: 28px;
+          margin-bottom: 0; }
+          @media (max-width: 950px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__block-with-clock p {
+              font-size: 15px; } }
+          @media (max-width: 768px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__block-with-clock p {
+              font-size: 13px;
+              line-height: 20px; } }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-title {
+        margin: 57px 0;
+        font-size: 21px;
+        text-align: center; }
+        @media (max-width: 480px) {
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-title {
+            margin: 40px 0; } }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        @media (max-width: 480px) {
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list {
+            justify-content: center;
+            margin-bottom: 0; } }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li {
+          width: 31%;
+          margin-right: 2%;
+          margin-bottom: 44px;
+          text-align: center;
+          position: relative; }
+          @media (max-width: 480px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li {
+              width: 33%;
+              margin-bottom: 30px; } }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li img {
+            display: block;
+            max-width: 100%;
+            width: 80px;
+            height: 60px;
+            margin: auto; }
+            @media (max-width: 480px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li img {
+                width: 60px;
+                height: 40px; } }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li p {
+            line-height: 1.31;
+            margin-top: 15px;
+            margin-bottom: 0; }
+            @media (max-width: 950px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li p {
+                font-size: 10pt; } }
+            @media (max-width: 480px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li p {
+                font-size: 9pt; } }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li span {
+            font-size: 5em;
+            line-height: .7;
+            font-family: Arial;
+            font-weight: 400;
+            color: #F24B09; }
+            @media (max-width: 480px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li span {
+                font-size: 3em; } }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li:nth-child(6) > img {
+          width: 110px; }
+          @media (max-width: 480px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__info .aside-info__advantages-list li:nth-child(6) > img {
+              width: 70px; } }
+    .sell-car__container .sell-car__content .sell-car__content-block .content-block__form {
+      width: 30%;
+      height: 100%;
+      display: block;
+      position: -webkit-sticky;
+      position: sticky;
+      background-color: white;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+      right: 25px;
+      top: 40px;
+      margin-bottom: 20px;
+      margin-top: -24rem; }
+      @media (max-width: 768px) {
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__form {
+          width: 100%;
+          height: auto;
+          right: 0;
+          top: 0;
+          margin-top: 0;
+          position: relative; } }
+      .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner {
+        padding: 30px; }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .aside-form__title {
+          font-size: 20px;
+          line-height: 1.2;
+          font-family: 'Proxima Nova Rg', sans-serif;
+          color: #2e2e2e; }
+          @media (min-width: 768px) and (max-width: 950px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .aside-form__title {
+              font-size: 15px; } }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .aside-form__form {
+          margin-top: 21px;
+          overflow: hidden; }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .aside-form__form label {
+            width: 100%;
+            display: block; }
+            @media (max-width: 950px) {
+              .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .aside-form__form label {
+                font-size: 12.5px; } }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .aside-form__form sup {
+            color: red; }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .aside-form__form .sell-form__year-km {
+            display: flex;
+            justify-content: space-between; }
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .aside-form__form .sell-form__year-km label {
+              width: 45%;
+              display: inline-block; }
+              @media (max-width: 768px) {
+                .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .aside-form__form .sell-form__year-km label {
+                  width: 47%; } }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .aside-form__form span {
+            color: #c3c3c3; }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner input[type='submit'] {
+          font-size: 16px;
+          min-width: 100%;
+          padding: 12px 30px;
+          color: #fff;
+          border-radius: 0; }
+          @media (max-width: 950px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner input[type='submit'] {
+              font-size: 12px; } }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .btn-disabled {
+          background-color: #63b932; }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .btn-correct {
+          background-color: #63b932; }
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .btn-correct:hover {
+            background-color: #458223; }
+        .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .sell-form__call-manadger {
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+          color: #999;
+          margin-top: 20px;
+          margin-bottom: 0; }
+          @media (min-width: 768px) and (max-width: 950px) {
+            .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .sell-form__call-manadger {
+              font-size: 10px; } }
+        @media (min-width: 768px) and (max-width: 950px) {
+          .sell-car__container .sell-car__content .sell-car__content-block .content-block__form .aside-form__inner .form-control {
+            font-size: unset;
+            padding: .375rem 0.6rem; } }
+
+/*# sourceMappingURL=sell_style.css.map */

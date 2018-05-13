@@ -1,0 +1,257 @@
+<div class="home-page__content">
+        <!--        header title-->
+
+        <h1 class="main-page--title">Найзручніший варіант для <b>продажу і покупки авто</b></h1>
+        <ul class="main-page__annotation">
+            <div class="icons-info__small-background"></div>
+            <li>
+                <div class="btn-annotation pink-wrap">
+                    <a href="#!/sellCar">Продати авто</a>
+                </div>
+                <div class="main-page__annotation-card">
+                    <p>Автопродаж, автовикуп, аукціон</p>
+                    <img src="../img/home/annotation-icon_1.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="btn-annotation gray-wrap">
+                    <a href="#!/usa" class="get_usa-page">Авто із США</a>
+                </div>
+                <div class="main-page__annotation-card">
+                    <p>Надійні авто із американських штатів</p>
+                    <img src="../img/home/annotation_icon_2.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="btn-annotation green-wrap">
+                    <a href="#!/buyCar" ng-click="activeMenu = 'Buy'">Купити авто</a>
+                </div>
+                <div class="main-page__annotation-card">
+                    <p>Оптимальний варіант для покупки</p>
+                    <img src="../img/home/annotation_icon_3.png" alt="">
+                </div>
+            </li>
+        </ul>
+        <a href="#" class="facebook__banner">
+		    <img src="../img/home/facebook_icon.png" alt="">
+		</a>
+
+        <a href="#!usa" class="usa__banner"> <button> Детальніше</button> </a>
+    </div>
+    <div class="container-fluid" ng-controller='homeCtrl as home'>
+        <section class="home-page__icons-info">
+            <ul class="home-page__icons">
+                <li>
+                    <img class="img-responsive" src="../img/home/1.svg" alt="" width="76">
+                    <p>Салон автомобілів<br>з пробігом</p>
+                </li>
+                <li>
+                    <img class="img-responsive" src="../img/home/2.svg" alt="" width="68">
+                    <p>Всі автомобілі перевірено</p>
+                </li>
+                <li>
+                    <img class="img-responsive" src="../img/home/3.svg" alt="" width="92">
+                    <p>Прозорі<br>ціни</p>
+                </li>
+                <li>
+                    <img class="img-responsive" src="../img/home/4.svg" alt="" width="70">
+                    <p>Відмінне обслуговування</p>
+                </li>
+                <li>
+                    <img class="img-responsive" src="../img/home/5.svg" alt="" width="90">
+                    <p>Программа<br>Trade-In</p>
+                </li>
+            </ul>
+        </section>
+        <section class="row home-page__auto-hardware">
+            <ul class="auto-hardware__list">
+                <li class="auto-hardware__item">
+                    <img src="../img/home/auto-zapchasti.png" alt="" class="img-responsive">
+                    <h3 class="auto-hardware__title pink-line">Автозапчастини</h3>
+                    <p class="auto-hardware__text">Доставка нових та б/у автозапчастин <br> будь-яких марок. По всій Україні. <br>Приймаємо замовлення 24/7.
+                    </p>
+                    <a class="btn__auto-hardware btn__auto-orange" href="#!/tiresParts">Підібрати запчастини</a>
+                </li>
+                <li class="auto-hardware__item">
+                    <img src="../img/home/auto-tires-logo.png" alt="" class="img-responsive">
+                    <h3 class="auto-hardware__title green-line">Шини і диски</h3>
+                    <p class="auto-hardware__text">Підбір нових і б/у шин.
+                        <br> Доставка в будь-який регіон України. <br> Приймаємо замовлення 24/7.
+                    </p>
+
+                    <a class="btn__auto-hardware btn__auto-green" href="#!/tiresParts" >Підібрати колеса</a>
+                </li>
+            </ul>
+        </section>
+        <section class="home-page__reviews">
+            <div class="home-page__slide-reviews">
+                <div class="home-page__swiper-slide first-slide">
+                    <div class="home-page__review-img-wrap">
+                        <img src="../img/home/photo_man_1.png" alt="" class="home-page__review-img">
+                    </div>
+                    <p class="home-page__review-name">Андрій</p>
+                    <p class="home-page__review-text">Зробив свій вибір на компанії Auto Market через позитивний досвід мого колеги. Що тут сказати? Обслуговування на найвищому рівні, всі працівники привітні та уважні до своїх клієнтів!
+                    </p>
+                </div>
+                <div class="home-page__swiper-slide second-slide">
+                    <div class="home-page__review-img-wrap">
+                        <img src="../img/home/photo_man_2.png" alt="" class="home-page__review-img">
+                    </div>
+                    <p class="home-page__review-name">Олег</p>
+                    <p class="home-page__review-text">
+                        Висловлюю подяку автосалону Auto Market! Допомогли мені вибрати і купити автомобіль у своєму салоні, приділивши велику турботу та уважність. Всім раджу скористатись послугами компанії Auto Market!
+                    </p>
+                </div>
+            </div>
+            <div class="home-page__swiper-pagination">
+                <span class="swiper-pagination-circle circle-active first-circle"></span>
+                <span class="swiper-pagination-circle second-circle">
+                        
+                    </span>
+            </div>
+
+        </section>
+        <section class="home-page__news">
+            <h2 class="h2__title-news">Новини ринку</h2>
+
+            <div id="demo" class="carousel slide">
+
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="home-page__carousel-block">
+                            <div class="carousel-block__news">
+                                <div class="carousel-block__img">
+                                    <img src="../img/home/picture-news-1.jpg" class='carousel-news__img' alt="">
+                                </div>
+                                <div class="carousel-news__content">
+                                    <h3 class="carousel-news__title">Honda запускає продажі гібридного седана Accord</h3>
+                                    <p class="carousel-news__text">
+                                        Американський офіс японської компанії Honda офіційно анонсував старт продажу гібридного седана Accord Hybrid, а...</p>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-block__news">
+                                <div class="carousel-block__img">
+                                    <img src="../img/home/picture-news-2.jpg" class='carousel-news__img' alt="">
+                                </div>
+                                <div class="carousel-news__content">
+                                    <h3 class="carousel-news__title">Американці перероблять Corvette в ексклюзивний 1000-сильний суперкар
+                                    </h3>
+                                    <p class="carousel-news__text">
+                                        Американська компанія Equus Automotive, відома як виробник масл-кару Bass 770, анонсувала нову модель...</p>
+                                </div>
+                            </div>
+                            <div class="carousel-block__news">
+                                <div class="carousel-block__img">
+                                    <img src="../img/home/picture-news-3.jpg" class='carousel-news__img' alt="">
+                                </div>
+                                <div class="carousel-news__content">
+                                    <h3 class="carousel-news__title">Subaru анонсувала прем'єру нового Forester</h3>
+                                    <p class="carousel-news__text">
+                                        Компанія Subaru опублікувала перше зображення кросовера Forester нового покоління. Офіційна прем'єра...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="home-page__carousel-block">
+                            <div class="carousel-block__news">
+                                <div class="carousel-block__img">
+                                    <img src="../img/home/picture-news-4.jpg" class='carousel-news__img' alt="">
+                                </div>
+                                <div class="carousel-news__content">
+                                    <h3 class="carousel-news__title">Оновлений седан Acura TLX вийшов у продажу</h3>
+                                    <p class="carousel-news__text">
+                                        На території Сполучених Штатів Америки починаються офіційні продажі оновленного седана Acura TLX 2019 модельного...</p>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-block__news">
+                                <div class="carousel-block__img">
+                                    <img src="../img/home/picture-news-5.jpg" class='carousel-news__img' alt="">
+                                </div>
+                                <div class="carousel-news__content">
+                                    <h3 class="carousel-news__title">Buick аноансував новий хетчбек Velite 6
+                                    </h3>
+                                    <p class="carousel-news__text">
+                                        Преміальна американська компанія офіційно анонсувала світову прем'єру нового сімейного хетчбека Velite 6,...</p>
+                                </div>
+                            </div>
+                            <div class="carousel-block__news">
+                                <div class="carousel-block__img">
+                                    <img src="../img/home/picture-news-6.jpg" class='carousel-news__img' alt="">
+                                </div>
+                                <div class="carousel-news__content">
+                                    <h3 class="carousel-news__title">Lincoln показав, яким буде новий Aviator</h3>
+                                    <p class="carousel-news__text">
+                                        Марка Lincoln представила відроджений позашляховик Aviator. Новинка демонтрує стилістику і обладнання серійної...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="home-page__carousel-block">
+                            <div class="carousel-block__news">
+                                <div class="carousel-block__img">
+                                    <img src="../img/home/picture-news-7.jpg" class='carousel-news__img' alt="">
+                                </div>
+                                <div class="carousel-news__content">
+                                    <h3 class="carousel-news__title">Bentley підготувала для «Гонки до небес» позашляховик Bentayga</h3>
+                                    <p class="carousel-news__text">
+                                        Компанія Bentley показала оновлений позашляховик Bentayga, який прийме участь в гонці &laquo;Пайкс Пик&raquo;...</p>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-block__news">
+                                <div class="carousel-block__img">
+                                    <img src="../img/home/picture-news-8.jpg" class='carousel-news__img' alt="">
+                                </div>
+                                <div class="carousel-news__content">
+                                    <h3 class="carousel-news__title">Хетчбек Toyota Corolla отримав нову силову установку, відмінну від Auris
+                                    </h3>
+                                    <p class="carousel-news__text">Пятидверна завжди була тісно повязана з Королою(седаном). Машина попереднього покоління в США продавалась як...</p>
+                                </div>
+                            </div>
+                            <div class="carousel-block__news">
+                                <div class="carousel-block__img">
+                                    <img src="../img/home/picture-news-9.jpg" class='carousel-news__img' alt="">
+                                </div>
+                                <div class="carousel-news__content">
+                                    <h3 class="carousel-news__title">Porsche показав випробування гібридних «Кайенів»</h3>
+                                    <p class="carousel-news__text">
+                                        Компанія Porsche розказала, як проходять фінальні випробування гібридних позашляховиків Cayenne нового покоління...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Left and right controls -->
+                <div class="carousel__left-right">
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev" target="_self">
+                <span>&#10094;</span>
+                
+              </a>
+                    <span class="current-slide"></span>
+                    <span>/</span>
+                    <a class="carousel-control-next" href="#demo" data-slide="next" target="_self"> 
+                <span>&#10095;</span>
+              </a>
+                    <span class="total-slide"></span>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="home-map">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d693268.7141159797!2d24.261248330125504!3d49.81218498410941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add717532da69%3A0xf0cb97b8441ff1fe!2z0LLRg9C70LjRhtGPINCj0L3RltCy0LXRgNGB0LjRgtC10YLRgdGM0LrQsCwgMSwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1524052392050" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+        </section>
+    </div>

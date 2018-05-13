@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Auto Market</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="../script/main.js"></script>
+    <script src="../script/service/buyCar.service.js"></script>
+    <script src="../script/directive/directiveFileread.js"></script>
+    <script src="../script/directive/paginatDir.js"></script>
+    <script src="../script/directive/numbersOnly.js"></script>
+    <script src="../script/directive/validFIle.js"></script>
+    <script src="../script/directive/scrollTop.js"></script>
+    <script src="../script/controller/buyCar.js"></script>
+    <script src="../script/controller/home.js"></script>
+    <script src="../script/controller/usa.js"></script>
+    <script src="../script/controller/sellCar.js"></script>
+    <script src="../script/controller/tiresParts.js"></script>
+    <script src="../script/controller/aboutUs.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/buyCar_style.css">
+    <link rel="stylesheet" href="../css/usa_style.css">
+    <link rel="stylesheet" href="../css/sell_style.css">
+    <link rel="stylesheet" href="../css/tiresParts_style.css">
+    <link rel="stylesheet" href="../css/aboutUs_style.css">
+</head>
+
+<body>
+    <!--nav menu-->
+    <div class="container" ng-controller='mainCtrl as main'>
+        <header class="header-menu--shadow">
+            <div class="header-menu">
+                <div class="header-menu__logo-wrap" ng-class="{'active-item' : activeMenu === 'Home'}">
+                    <a href="#!/" class="header-menu__logo" ng-click='activeMenu ="Home"'></a>
+                </div>
+                <ul class="header-menu__list">
+                    <li><a href="#!/buyCar" ng-class="{'active-item' : activeMenu === 'Buy'}" ng-click="activeMenu = 'Buy'"><span>Купити</span></a></li>
+                    <li><a href="#!/usa" ng-class="{'active-item' : activeMenu === 'USA'}" ng-click="activeMenu = 'USA'"><span>Авто із США</span></a></li>
+                    <li><a href="#!/sellCar" ng-class="{'active-item' : activeMenu === 'Sell'}" ng-click="activeMenu = 'Sell'"><span>Продати</span></a></li>
+                    <li><a href="#!/tiresParts" ng-class="{'active-item' : activeMenu === 'Tires'}" ng-click="activeMenu = 'Tires'"><span>Шини і запчастини</span></a></li>
+                    <li><a href="#!/aboutUs" ng-class="{'active-item' : activeMenu === 'About_us'}" ng-click="activeMenu = 'About_us'"><span>Про нас</span></a></li>
+                </ul>
+                <div class="header-menu-mobile__order">
+                    <button type="button" class="btn btn-block btn-phone"><img src="../img/home/phone_icon.png" alt="phone_icon"> <span> Замовити дзвінок</span></button>
+                </div>
+                <div class="pull-right">
+                    <span class="header-menu__separate-line"></span>
+                    <div class="header-menu__list-tel-wrap">
+                        <span class="header-menu__list-tel">
+                                     (066) 194-92-49 </span>
+                    </div>
+                    <button class="button header-menu__order">Замовити дзвінок</button>
+                </div>
+                <div class="header-menu__burg-mobile" ng-click='mobileMenu = ! mobileMenu'>
+                    <a class="menu_a">
+                        <span class="burg_span"></span>
+                        <span class="burg_span"></span>
+                        <span class="burg_span"></span>
+                    </a>
+                </div>
+            </div>
+            <!-----------mobile menu ---------->
+            <div id="window__menu__mobile" ng-show='mobileMenu'>
+                <ul class="header-menu__mobile-list">
+                    <li ng-click='mobileMenu = ! mobileMenu'><a href="#!buyCar" ng-class="{'active-item' : activeMenu === 'Buy'}" ng-click="activeMenu = 'Buy'"><span>Купити</span></a></li>
+                    <li ng-click='mobileMenu = ! mobileMenu'><a href="#!usa" ng-class="{'active-item' : activeMenu === 'USA'}" ng-click="activeMenu = 'USA'"><span>Авто із США</span></a></li>
+                    <li ng-click='mobileMenu = ! mobileMenu'><a href="#!sellCar" ng-class="{'active-item' : activeMenu === 'Sell'}" ng-click="activeMenu = 'Sell'"><span>Продати</span></a></li>
+                    <li ng-click='mobileMenu = ! mobileMenu'><a href="#!/tiresParts" ng-class="{'active-item' : activeMenu === 'Tires'}" ng-click="activeMenu = 'Tires'"><span>Шини і запчастини</span></a></li>
+                    <li ng-click='mobileMenu = ! mobileMenu'><a href="#!/aboutUs" ng-class="{'active-item' : activeMenu === 'About_us'}" ng-click="activeMenu = 'About_us'"><span>Про нас</span></a></li>
+                </ul>
+                <ul class="header-menu-mobile__list-tel">
+                    <li><a href="#">(066) 194-92-49</a></li>
+                    <li><a href="#">(098) 432-54-76</a></li>
+                    <li><a href="#">(093) 512-23-45</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <ng-view></ng-view>
+    
+<!------------- footer  ------------>
+    <footer id='footer'>
+        <div class="footer-content">
+            <div class="footer-content-top">
+                <p class="footer-content__logo">
+                    <img src="../img/home/logo-new.png" alt="">
+                </p>
+                <ul class="footer-content__menu">
+                    <li><a href="#!/buyCar" ng-click="activeMenu = 'Buy'"><span>Купити</span></a></li>
+                    <li><a href="#!/usa" ng-click="activeMenu = 'USA'"><span>Авто із США</span></a></li>
+                    <li><a href="#!/sellCar" ng-click="activeMenu = 'Sell'"><span>Продати</span></a></li>
+                    <li><a href="#!/tiresParts" ng-click="activeMenu = 'Tires'"><span>Шини і запчастини</span></a></li>
+                    <li><a href="#!/aboutUs" ng-click="activeMenu = 'About_us'"><span>Про нас</span></a></li>
+                </ul>
+                <div class="footer-content__social">
+                    <p>Ми в соціальних мережах:</p>
+                    <nav class="footer__social-icons">
+                        <a href="#"><i class="fab fa-viber"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-google-plus"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-content-bottom">
+                <p class="visible-xs page-footer__copyright">© 2018 AutoMarket.ua</p>
+
+            </div>
+        </div>
+    </footer>
+    <button class="btn" id="scroll-top"><i class="fas fa-arrow-up" scroll-on-click='scroll-top'></i></button>
+</body>
+</html>
